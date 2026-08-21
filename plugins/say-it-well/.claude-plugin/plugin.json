@@ -1,0 +1,17 @@
+{
+  "name": "say-it-well",
+  "description": "Clear, useful, user-centered messages from coding agents.",
+  "version": "2.0.0",
+  "author": {
+    "name": "shengjiex98"
+  },
+  "homepage": "https://github.com/shengjiex98/say-it-well#readme",
+  "repository": "https://github.com/shengjiex98/say-it-well",
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "agent-skills",
+    "agent-communication",
+    "technical-writing",
+    "coding-agents"
+  ]
+}

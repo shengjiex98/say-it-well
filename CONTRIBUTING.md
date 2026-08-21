@@ -1,7 +1,7 @@
 # Contributing
 
-Contributions that make coding-agent communication clearer, more concise, or more
-accurate are welcome.
+Say It Well welcomes focused contributions that make coding-agent messages more
+useful, concise, and accurate.
 
 ## Make a focused change
 
@@ -13,7 +13,7 @@ accurate are welcome.
    authorities than this skill.
 5. Validate the skill structure before submitting the change.
 6. Keep the marketplace copy under
-   `plugins/code-agent-communication/skills/code-agent-communication`
+   `plugins/say-it-well/skills/say-it-well`
    synchronized with the standalone skill and references.
 
 ## Preserve provenance
@@ -35,7 +35,7 @@ project's license.
 
 Confirm that:
 
-- the YAML frontmatter contains the name `code-agent-communication` and a concise
+- the YAML frontmatter contains the name `say-it-well` and a concise
   trigger description;
 - every relative link resolves;
 - examples state observed checks and uncertainty accurately;

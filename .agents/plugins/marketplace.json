@@ -1,14 +1,14 @@
 {
-  "name": "code-agent-communication",
+  "name": "say-it-well",
   "interface": {
-    "displayName": "Code Agent Communication"
+    "displayName": "Say It Well"
   },
   "plugins": [
     {
-      "name": "code-agent-communication",
+      "name": "say-it-well",
       "source": {
         "source": "local",
-        "path": "./plugins/code-agent-communication"
+        "path": "./plugins/say-it-well"
       },
       "policy": {
         "installation": "AVAILABLE",

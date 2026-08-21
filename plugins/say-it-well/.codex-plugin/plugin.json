@@ -1,0 +1,37 @@
+{
+  "name": "say-it-well",
+  "version": "2.0.0",
+  "description": "Clear, useful, user-centered messages from coding agents.",
+  "author": {
+    "name": "shengjiex98",
+    "url": "https://github.com/shengjiex98"
+  },
+  "homepage": "https://github.com/shengjiex98/say-it-well#readme",
+  "repository": "https://github.com/shengjiex98/say-it-well",
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "agent-skills",
+    "agent-communication",
+    "technical-writing",
+    "coding-agents"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Say It Well",
+    "shortDescription": "Clear, useful messages from coding agents",
+    "longDescription": "Turns coding-agent notes into useful progress updates, questions, explanations, reviews, and handoffs that lead with the outcome and report evidence accurately.",
+    "developerName": "shengjiex98",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive"
+    ],
+    "websiteURL": "https://github.com/shengjiex98/say-it-well",
+    "privacyPolicyURL": "https://github.com/shengjiex98/say-it-well/blob/main/PRIVACY.md",
+    "termsOfServiceURL": "https://github.com/shengjiex98/say-it-well/blob/main/TERMS.md",
+    "defaultPrompt": [
+      "Turn these coding notes into a clear update.",
+      "Explain this root cause without the work log.",
+      "Write a concise final handoff from these results."
+    ]
+  }
+}
