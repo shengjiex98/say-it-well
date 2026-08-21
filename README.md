@@ -28,7 +28,17 @@ skill. Then choose your agent below.
 <details>
 <summary><strong>OpenAI Codex</strong></summary>
 
-Install the skill for your user account:
+Install from this repository's Codex marketplace:
+
+```bash
+codex plugin marketplace add shengjiex98/code-agent-communication
+codex plugin add code-agent-communication@code-agent-communication
+```
+
+Start a new Codex session after installation. You can open `/plugins` to inspect
+or manage the plugin.
+
+Alternatively, install only the standalone skill for your user account:
 
 ```bash
 git clone https://github.com/shengjiex98/code-agent-communication.git \
@@ -49,7 +59,18 @@ For one repository, clone or copy the project to
 <details>
 <summary><strong>Claude Code</strong></summary>
 
-Install the skill for your user account:
+Install from this repository's Claude Code marketplace:
+
+```bash
+claude plugin marketplace add shengjiex98/code-agent-communication
+claude plugin install code-agent-communication@code-agent-communication
+```
+
+The plugin exposes the namespaced skill
+`/code-agent-communication:code-agent-communication`. Restart Claude Code after
+installing or updating the plugin.
+
+Alternatively, install only the standalone skill for your user account:
 
 ```bash
 git clone https://github.com/shengjiex98/code-agent-communication.git \
@@ -150,6 +171,8 @@ its settings.
 
 ```text
 code-agent-communication/
+├── .agents/plugins/                 Codex marketplace and plugin package
+├── .claude-plugin/marketplace.json  Claude Code marketplace catalog
 ├── SKILL.md                         Core instructions and metadata
 ├── agents/
 │   └── openai.yaml                  OpenAI display and invocation metadata
@@ -159,8 +182,16 @@ code-agent-communication/
 ├── CONTRIBUTING.md                  Contribution and provenance requirements
 ├── LICENSE                          CC BY 4.0 legal text
 ├── NOTICE.md                        Attribution and trademark notice
+├── PRIVACY.md                       Plugin privacy disclosure
+├── SUPPORT.md                       Public support channel
+├── TERMS.md                         Plugin terms of use
 └── README.md                        Installation and usage
 ```
+
+The Codex and Claude Code catalogs point to one shared, skills-only plugin under
+`.agents/plugins/plugins/code-agent-communication`. That package contains both
+platform manifests and a complete copy of the standalone skill, including its
+references, license, and attribution notice.
 
 ## Design and provenance
 

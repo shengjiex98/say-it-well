@@ -1,0 +1,28 @@
+{
+  "name": "code-agent-communication",
+  "description": "Skills for clear, concise communication between coding agents and users.",
+  "owner": {
+    "name": "shengjiex98"
+  },
+  "plugins": [
+    {
+      "name": "code-agent-communication",
+      "source": "./.agents/plugins/plugins/code-agent-communication",
+      "description": "Clear, concise, user-centered communication for coding agents.",
+      "version": "1.0.0",
+      "author": {
+        "name": "shengjiex98"
+      },
+      "homepage": "https://github.com/shengjiex98/code-agent-communication#readme",
+      "repository": "https://github.com/shengjiex98/code-agent-communication",
+      "license": "CC-BY-4.0",
+      "category": "Development",
+      "tags": [
+        "communication",
+        "technical-writing",
+        "coding-agents"
+      ],
+      "strict": true
+    }
+  ]
+}

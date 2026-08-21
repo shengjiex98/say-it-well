@@ -1,0 +1,20 @@
+{
+  "name": "code-agent-communication",
+  "interface": {
+    "displayName": "Code Agent Communication"
+  },
+  "plugins": [
+    {
+      "name": "code-agent-communication",
+      "source": {
+        "source": "local",
+        "path": "./plugins/code-agent-communication"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

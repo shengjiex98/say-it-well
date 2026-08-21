@@ -1,0 +1,17 @@
+{
+  "name": "code-agent-communication",
+  "description": "Clear, concise, user-centered communication for coding agents.",
+  "version": "1.0.0",
+  "author": {
+    "name": "shengjiex98"
+  },
+  "homepage": "https://github.com/shengjiex98/code-agent-communication#readme",
+  "repository": "https://github.com/shengjiex98/code-agent-communication",
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "agent-skills",
+    "communication",
+    "technical-writing",
+    "coding-agents"
+  ]
+}

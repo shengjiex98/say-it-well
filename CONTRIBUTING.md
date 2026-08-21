@@ -12,6 +12,9 @@ accurate are welcome.
 4. Preserve the user's instructions and project-specific terminology as higher
    authorities than this skill.
 5. Validate the skill structure before submitting the change.
+6. Keep the marketplace copy under
+   `.agents/plugins/plugins/code-agent-communication/skills/code-agent-communication`
+   synchronized with the standalone skill and references.
 
 ## Preserve provenance
 
@@ -38,3 +41,8 @@ Confirm that:
 - examples state observed checks and uncertainty accurately;
 - the first sentence of each example contains the outcome or current state; and
 - the change doesn't add unsupported agent-specific behavior to the README.
+
+For a marketplace release, also confirm that the version is identical in both
+plugin manifests and in `.claude-plugin/marketplace.json`. Validate the Codex
+plugin with the plugin-creator validator and the Claude marketplace with
+`claude plugin validate . --strict`.

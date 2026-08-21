@@ -1,0 +1,37 @@
+{
+  "name": "code-agent-communication",
+  "version": "1.0.0",
+  "description": "Clear, concise, user-centered communication for coding agents.",
+  "author": {
+    "name": "shengjiex98",
+    "url": "https://github.com/shengjiex98"
+  },
+  "homepage": "https://github.com/shengjiex98/code-agent-communication#readme",
+  "repository": "https://github.com/shengjiex98/code-agent-communication",
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "agent-skills",
+    "communication",
+    "technical-writing",
+    "coding-agents"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Code Agent Communication",
+    "shortDescription": "Clear, concise communication for coding agents",
+    "longDescription": "Helps coding agents lead with outcomes, explain evidence and uncertainty accurately, and write concise progress updates, reviews, troubleshooting notes, and final handoffs.",
+    "developerName": "shengjiex98",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive"
+    ],
+    "websiteURL": "https://github.com/shengjiex98/code-agent-communication",
+    "privacyPolicyURL": "https://github.com/shengjiex98/code-agent-communication/blob/main/PRIVACY.md",
+    "termsOfServiceURL": "https://github.com/shengjiex98/code-agent-communication/blob/main/TERMS.md",
+    "defaultPrompt": [
+      "Rewrite this coding update clearly and concisely.",
+      "Explain this root cause for the user.",
+      "Turn these notes into a concise final handoff."
+    ]
+  }
+}
