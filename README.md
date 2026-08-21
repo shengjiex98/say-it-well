@@ -171,8 +171,9 @@ its settings.
 
 ```text
 code-agent-communication/
-├── .agents/plugins/                 Codex marketplace and plugin package
+├── .agents/plugins/marketplace.json Codex marketplace catalog
 ├── .claude-plugin/marketplace.json  Claude Code marketplace catalog
+├── plugins/                         Shared Codex and Claude plugin package
 ├── SKILL.md                         Core instructions and metadata
 ├── agents/
 │   └── openai.yaml                  OpenAI display and invocation metadata
@@ -189,7 +190,7 @@ code-agent-communication/
 ```
 
 The Codex and Claude Code catalogs point to one shared, skills-only plugin under
-`.agents/plugins/plugins/code-agent-communication`. That package contains both
+`plugins/code-agent-communication`. That package contains both
 platform manifests and a complete copy of the standalone skill, including its
 references, license, and attribution notice.
 

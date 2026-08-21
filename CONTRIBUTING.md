@@ -13,7 +13,7 @@ accurate are welcome.
    authorities than this skill.
 5. Validate the skill structure before submitting the change.
 6. Keep the marketplace copy under
-   `.agents/plugins/plugins/code-agent-communication/skills/code-agent-communication`
+   `plugins/code-agent-communication/skills/code-agent-communication`
    synchronized with the standalone skill and references.
 
 ## Preserve provenance

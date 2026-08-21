@@ -7,7 +7,7 @@
   "plugins": [
     {
       "name": "code-agent-communication",
-      "source": "./.agents/plugins/plugins/code-agent-communication",
+      "source": "./plugins/code-agent-communication",
       "description": "Clear, concise, user-centered communication for coding agents.",
       "version": "1.0.0",
       "author": {
