@@ -1,8 +1,8 @@
 # Google style basis
 
-This skill adapts the Google developer documentation style guide to interactive
-coding-agent communication. It summarizes decisions that change an agent's
-messages; it doesn't reproduce the guide.
+Say It Well adapts the Google developer documentation style guide to interactive
+coding-agent communication. This source map records decisions that change an
+agent's messages; it doesn't reproduce the guide.
 
 Reviewed on August 20, 2026. Under the
 [Google Developers Site Policies](https://developers.google.com/terms/site-policies),

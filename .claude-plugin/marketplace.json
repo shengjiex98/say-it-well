@@ -1,24 +1,24 @@
 {
-  "name": "code-agent-communication",
-  "description": "Skills for clear, concise communication between coding agents and users.",
+  "name": "say-it-well",
+  "description": "Skills that turn coding-agent notes into clear, useful messages.",
   "owner": {
     "name": "shengjiex98"
   },
   "plugins": [
     {
-      "name": "code-agent-communication",
-      "source": "./plugins/code-agent-communication",
-      "description": "Clear, concise, user-centered communication for coding agents.",
-      "version": "1.0.0",
+      "name": "say-it-well",
+      "source": "./plugins/say-it-well",
+      "description": "Clear, useful, user-centered messages from coding agents.",
+      "version": "2.0.0",
       "author": {
         "name": "shengjiex98"
       },
-      "homepage": "https://github.com/shengjiex98/code-agent-communication#readme",
-      "repository": "https://github.com/shengjiex98/code-agent-communication",
+      "homepage": "https://github.com/shengjiex98/say-it-well#readme",
+      "repository": "https://github.com/shengjiex98/say-it-well",
       "license": "CC-BY-4.0",
       "category": "Development",
       "tags": [
-        "communication",
+        "agent-communication",
         "technical-writing",
         "coding-agents"
       ],

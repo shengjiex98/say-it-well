@@ -1,29 +1,34 @@
-# Code Agent Communication
+# Say It Well
 
-A portable Agent Skill that helps coding agents communicate in clear, concise,
-user-centered language.
+**Ship the work. Say it well.**
 
-Use it for progress updates, questions, explanations, troubleshooting, code
-reviews, and final handoffs. It focuses on communication with the user; it does
-not impose a source-code style.
+Say It Well is a portable Agent Skill that helps coding agents turn working notes
+into clear, useful messages. It replaces noisy work logs, vague caveats, and
+buried conclusions with communication that leads with the outcome and gives the
+user what they need to act.
 
-## What it changes
+Use it for progress updates, questions, troubleshooting, code reviews,
+explanations, and final handoffs. It improves the conversation around the code;
+it doesn't impose a source-code style.
 
-The skill teaches an agent to:
+## What it teaches
+
+Say It Well helps an agent:
 
 - lead with the result, decision, cause, or blocker;
-- state evidence, uncertainty, and unrun checks accurately;
-- write direct, natural sentences without filler or theatrical narration;
-- make technical content easy to scan without over-formatting it; and
-- adapt its response to the message type and the task's risk.
+- separate observed evidence from inference and unrun checks;
+- replace routine narration with useful changes of state;
+- write direct, natural sentences without filler;
+- format technical details for fast scanning; and
+- match the depth of a message to the task and its risk.
 
-The instructions are concise. Longer examples and source notes load only when
-the agent needs them.
+The core instructions stay compact. Extended examples and source notes load only
+when a task needs them.
 
 ## Install
 
 Review `SKILL.md` and the supporting files before installing any third-party
-skill. Then choose your agent below.
+skill. Then choose your agent.
 
 <details>
 <summary><strong>OpenAI Codex</strong></summary>
@@ -31,26 +36,23 @@ skill. Then choose your agent below.
 Install from this repository's Codex marketplace:
 
 ```bash
-codex plugin marketplace add shengjiex98/code-agent-communication
-codex plugin add code-agent-communication@code-agent-communication
+codex plugin marketplace add shengjiex98/say-it-well
+codex plugin add say-it-well@say-it-well
 ```
 
-Start a new Codex session after installation. You can open `/plugins` to inspect
-or manage the plugin.
+Start a new Codex task after installation. Open `/plugins` to inspect or manage
+the plugin.
 
 Alternatively, install only the standalone skill for your user account:
 
 ```bash
-git clone https://github.com/shengjiex98/code-agent-communication.git \
-  ~/.agents/skills/code-agent-communication
+git clone https://github.com/shengjiex98/say-it-well.git \
+  ~/.agents/skills/say-it-well
 ```
 
-Codex discovers user skills in `~/.agents/skills`. To use the skill explicitly,
-mention `$code-agent-communication`. Codex can also select it automatically when
-the task matches its description.
-
-For one repository, clone or copy the project to
-`.agents/skills/code-agent-communication` in that repository instead.
+Codex discovers user skills in `~/.agents/skills`. Mention `$say-it-well` to
+apply it explicitly, or let Codex select it when the request matches. For one
+repository, install it under `.agents/skills/say-it-well` instead.
 
 [Codex skill documentation](https://learn.chatgpt.com/docs/build-skills)
 
@@ -62,23 +64,22 @@ For one repository, clone or copy the project to
 Install from this repository's Claude Code marketplace:
 
 ```bash
-claude plugin marketplace add shengjiex98/code-agent-communication
-claude plugin install code-agent-communication@code-agent-communication
+claude plugin marketplace add shengjiex98/say-it-well
+claude plugin install say-it-well@say-it-well
 ```
 
-The plugin exposes the namespaced skill
-`/code-agent-communication:code-agent-communication`. Restart Claude Code after
+The plugin exposes `/say-it-well:say-it-well`. Restart Claude Code after
 installing or updating the plugin.
 
-Alternatively, install only the standalone skill for your user account:
+Alternatively, install only the standalone skill:
 
 ```bash
-git clone https://github.com/shengjiex98/code-agent-communication.git \
-  ~/.claude/skills/code-agent-communication
+git clone https://github.com/shengjiex98/say-it-well.git \
+  ~/.claude/skills/say-it-well
 ```
 
-Invoke it with `/code-agent-communication`, or let Claude load it when relevant.
-For one repository, use `.claude/skills/code-agent-communication` instead.
+Invoke it with `/say-it-well`. For one repository, install it under
+`.claude/skills/say-it-well` instead.
 
 [Claude Code skill documentation](https://code.claude.com/docs/en/slash-commands)
 
@@ -90,13 +91,12 @@ For one repository, use `.claude/skills/code-agent-communication` instead.
 Install the skill for your user account:
 
 ```bash
-git clone https://github.com/shengjiex98/code-agent-communication.git \
-  ~/.agents/skills/code-agent-communication
+git clone https://github.com/shengjiex98/say-it-well.git \
+  ~/.agents/skills/say-it-well
 ```
 
-Copilot also supports `~/.copilot/skills` for personal skills. For a project
-skill, use `.github/skills/code-agent-communication` or
-`.agents/skills/code-agent-communication` in the repository.
+Copilot also supports `~/.copilot/skills`. For a project skill, use
+`.github/skills/say-it-well` or `.agents/skills/say-it-well`.
 
 [GitHub Copilot skill documentation](https://docs.github.com/en/copilot/concepts/agents/about-agent-skills)
 
@@ -108,12 +108,11 @@ skill, use `.github/skills/code-agent-communication` or
 Install directly from GitHub:
 
 ```bash
-gemini skills install https://github.com/shengjiex98/code-agent-communication
+gemini skills install https://github.com/shengjiex98/say-it-well
 ```
 
 The command installs to your user profile by default. Add `--scope workspace`
-for the current project only. Gemini CLI also discovers user skills in
-`~/.agents/skills` and workspace skills in `.agents/skills`.
+for the current project only.
 
 [Gemini CLI skill documentation](https://geminicli.com/docs/cli/using-agent-skills/)
 
@@ -125,14 +124,13 @@ for the current project only. Gemini CLI also discovers user skills in
 Install the skill for your user account:
 
 ```bash
-git clone https://github.com/shengjiex98/code-agent-communication.git \
-  ~/.agents/skills/code-agent-communication
+git clone https://github.com/shengjiex98/say-it-well.git \
+  ~/.agents/skills/say-it-well
 ```
 
 Cursor also supports `~/.cursor/skills`. For one repository, use
-`.agents/skills/code-agent-communication` or
-`.cursor/skills/code-agent-communication` instead. Invoke the skill from the `/`
-menu or let Cursor select it automatically.
+`.agents/skills/say-it-well` or `.cursor/skills/say-it-well`. Invoke the skill
+from the `/` menu or let Cursor select it automatically.
 
 [Cursor skill documentation](https://cursor.com/docs/skills)
 
@@ -142,8 +140,8 @@ menu or let Cursor select it automatically.
 <summary><strong>Other Agent Skills-compatible tools</strong></summary>
 
 Clone or copy this repository into the tool's user-level or project-level skills
-directory. Keep the directory name `code-agent-communication` and preserve the
-repository structure so links from `SKILL.md` continue to work.
+directory. Keep the directory name `say-it-well` and preserve the repository
+structure so links from `SKILL.md` continue to work.
 
 The package follows the open [Agent Skills specification](https://agentskills.io/).
 
@@ -154,14 +152,14 @@ directory.
 
 ## Use
 
-Ask the agent to use the skill when you want to force its application. Examples:
+Ask the agent to apply Say It Well when the quality of the explanation matters:
 
 ```text
-Use $code-agent-communication to rewrite this handoff.
+Use $say-it-well to turn these notes into a concise handoff.
 ```
 
 ```text
-Use /code-agent-communication and explain the root cause to the user.
+Use /say-it-well and explain the root cause to the user.
 ```
 
 Invocation syntax varies by agent. Automatic activation depends on the agent and
@@ -170,13 +168,12 @@ its settings.
 ## Package contents
 
 ```text
-code-agent-communication/
+say-it-well/
 ├── .agents/plugins/marketplace.json Codex marketplace catalog
 ├── .claude-plugin/marketplace.json  Claude Code marketplace catalog
-├── plugins/                         Shared Codex and Claude plugin package
+├── plugins/say-it-well/          Shared Codex and Claude plugin package
 ├── SKILL.md                         Core instructions and metadata
-├── agents/
-│   └── openai.yaml                  OpenAI display and invocation metadata
+├── agents/openai.yaml               OpenAI display and invocation metadata
 ├── references/
 │   ├── google-style-basis.md        Source coverage and adaptation decisions
 │   └── response-patterns.md         Before-and-after response examples
@@ -185,24 +182,22 @@ code-agent-communication/
 ├── NOTICE.md                        Attribution and trademark notice
 ├── PRIVACY.md                       Plugin privacy disclosure
 ├── SUPPORT.md                       Public support channel
-├── TERMS.md                         Plugin terms of use
-└── README.md                        Installation and usage
+└── TERMS.md                         Plugin terms of use
 ```
 
-The Codex and Claude Code catalogs point to one shared, skills-only plugin under
-`plugins/code-agent-communication`. That package contains both
-platform manifests and a complete copy of the standalone skill, including its
-references, license, and attribution notice.
+The marketplace catalogs point to one shared, skills-only plugin under
+`plugins/say-it-well`. That package contains a complete copy of the standalone
+skill, its references, license, and attribution notice.
 
 ## Design and provenance
 
-This is an original, chat-specific adaptation informed by the
+Say It Well is an original, chat-specific adaptation informed by the
 [Google developer documentation style guide](https://developers.google.com/style).
 It selects, summarizes, reorganizes, and extends relevant guidance for interactive
-coding agents. It does not reproduce the guide wholesale.
+coding agents; it doesn't reproduce the guide wholesale.
 
 The source map in `references/google-style-basis.md` records the relevant guide
-sections and the project-specific decisions derived from them. The examples in
+sections and project-specific decisions. The examples in
 `references/response-patterns.md` are original to this project.
 
 ## License and attribution
@@ -213,7 +208,7 @@ This project is licensed under the
 required attribution and change notice.
 
 The Google style guide's prose is also available under CC BY 4.0. This repository
-does not include Google logos, brand assets, or copied Google code samples. Google
+doesn't include Google logos, brand assets, or copied Google code samples. Google
 trademarks are not licensed by CC BY 4.0. This project is not affiliated with or
 endorsed by Google.
 

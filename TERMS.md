@@ -1,6 +1,6 @@
 # Terms of use
 
-By using Code Agent Communication, you agree to the following terms:
+By using Say It Well, you agree to the following terms:
 
 - The project is provided under the CC BY 4.0 license in `LICENSE`.
 - The project is provided as-is, without warranties or guarantees.

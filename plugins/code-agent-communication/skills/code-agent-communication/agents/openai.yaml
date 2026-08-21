@@ -1,6 +1,0 @@
-interface:
-  display_name: "Code Agent Communication"
-  short_description: "Clear, concise communication for coding agents"
-  default_prompt: "Use $code-agent-communication to explain this coding task clearly and concisely."
-policy:
-  allow_implicit_invocation: true
